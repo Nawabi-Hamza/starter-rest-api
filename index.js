@@ -69,7 +69,6 @@ var contactMail = nodemailer.createTransport({
     service: 'gmail',
     auth: {
     user: 'hamza.nawabi119@gmail.com',
-    // pass: 'tvkfkmfywdghpvat'
     pass:"kkmaxsjegmagwrmw"
     }
 });
@@ -81,8 +80,6 @@ contactMail.verify((error)=>{
     }
 })
 app.post("/",(req,res)=>{
-    // res.send("post methode") 
-    // var emailto =" hamza.nawabi119@gmail.com   "
     const name = req.body.name
     const email = req.body.email
     const subject = req.body.subject
